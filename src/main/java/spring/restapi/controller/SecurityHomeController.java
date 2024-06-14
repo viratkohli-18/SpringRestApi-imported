@@ -11,14 +11,14 @@ public class SecurityHomeController {
     @ResponseBody
     public String publicPage() {
         System.out.println("Public page");
-        return "This is a public page";
+        return "This is a public page from hub";
     }
 
     @GetMapping("/kamal")
     @ResponseBody
     public String privatePage() {
         System.out.println("Private page");
-        return "This is a private page. You need to be authenticated to see this.";
+        return "this needed to work";
     }
 
     @GetMapping("/login")
